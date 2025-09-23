@@ -61,13 +61,13 @@ table{
 td, th {
 	padding: .7em;
 	margin: 0;
-	border: 1px solid #fc0303;
+	border: 1px solid #ccc;
 	text-align: center;
 }
 
 th{
 	font-weight: bold;
-	background-color: #000000;
+	background-color: #EEE;
 }
 
 label{
