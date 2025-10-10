@@ -20,3 +20,20 @@ var tdImc = document.querySelector(".info-imc");
 var imc = peso / (altura * altura);
 tdImc.textContent = imc;
 console.log(imc);
+
+
+var pesoEhValido = true;
+var alturaEhValida = true;
+
+if (peso < 0 || peso > 1000) {
+    console.log("Peso inválido");
+    pesoEhValido = false;
+}
+
+if (altura > 3.00 || altura < 0) {
+    console.log("Altura inválida");
+    alturaEhValida = false;
+}
+
+
+
