@@ -17,8 +17,6 @@ var altura = tdAltura.textContent;
 console.log(altura);
 
 var tdImc = document.querySelector(".info-imc");
-var imc = peso / (altura * altura);
-tdImc.textContent = imc;
 console.log(imc);
 
 
@@ -35,5 +33,13 @@ if (altura > 3.00 || altura < 0) {
     alturaEhValida = false;
 }
 
+if (alturaEhValida && pesoEhValido){
+    var imc = peso / (altura * altura);
+    tdImc.textContent = imc;
+}
 
+if (alturaEhValida && pesoEhValido){
+    var imc = peso / (altura * altura);
+    tdImc.textContent = imc;
+}
 
