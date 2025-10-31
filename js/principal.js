@@ -52,7 +52,7 @@ var botaoAdicionar = document.querySelector("#adicionar-paciente");
 botaoAdicionar.addEventListener("click", function(event) {
     event.preventDefault();
    // alert("Oi eu sou o botão e fui clicado")
-});
+
 
 var form = document.querySelector("#form-adiciona");
 
@@ -73,7 +73,6 @@ nomeTd.textContent = nome;
 pesoTd.textContent = peso;
 alturaTd.textContent = altura;
 gorduraTd.textContent = gordura;
-// imcTd.textContent = gordura;
 
 pacienteTr.appendChild(nomeTd);
 pacienteTr.appendChild(pesoTd);
@@ -81,5 +80,5 @@ pacienteTr.appendChild(alturaTd);
 pacienteTr.appendChild(gorduraTd);
 
 var tabela = document.querySelector("#tabela-pacientes");
-
 tabela.appendChild(pacienteTr);
+});
