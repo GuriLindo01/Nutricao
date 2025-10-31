@@ -74,3 +74,8 @@ pesoTd.textContent = peso;
 alturaTd.textContent = altura;
 gorduraTd.textContent = gordura;
 // imcTd.textContent = gordura;
+
+pacienteTr.appendChild(nomeTd);
+pacienteTr.appendChild(pesoTd);
+pacienteTr.appendChild(alturaTd);
+pacienteTr.appendChild(gorduraTd);
