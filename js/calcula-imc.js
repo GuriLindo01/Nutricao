@@ -2,7 +2,7 @@
 var titulo = document.querySelector("h1");
 console.log(titulo);
 console.log(titulo.textContent);
-titulo.textContent = ("White nutritions");
+titulo.textContent = ("Nego nutritations");
 
 var pacientes = document.querySelectorAll(".paciente");
 
@@ -36,14 +36,19 @@ paciente.classList.add("paciente-invalido");
 }
 
 if (alturaEhValido && pesoEhValido){
-var imc = calculaImc(peso, altura);
+var imc = calculaImc (peso, altura);
 tdImc.textContent = imc.toFixed(2);
 }
 }
 
-function calculaImc (peso, altura){
-    var imc = 0;
-    var imc = peso / (altura * altura);
-    return imc.toFixed(2);
+
+titulo.addEventListener("click", mostraMensagem);
+function mostraMensagem(){
+alert("Olá eu fui clicado.")
 }
 
+function calculaImc (peso, altura){
+var imc = 0;
+var imc = peso / (altura * altura);
+return imc;
+}
